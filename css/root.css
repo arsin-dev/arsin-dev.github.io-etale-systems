@@ -1,0 +1,80 @@
+:root {
+    --black: #333333;
+    --gray: #b1b1b1;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 600px;
+
+    /* font-family: Consolas, monaco, monospace; */
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 20px;
+}
+
+h2 {
+    margin-bottom: 15px; /* Increased from 2px to create more space */
+    font-weight: normal;
+    font-size: 36px; /* Reduced from 48px to a more balanced size */
+    line-height: 1.2; /* Added to control line height */
+}
+
+div.main {
+    display: flex;
+    flex-direction: column;
+
+    width: calc(min(100%, 900px));
+    flex-grow: 1;
+
+    margin: 0 auto;
+}
+
+div.header {
+    display: grid;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+a {
+    color: var(--gray);
+    border-bottom: 1px var(--gray);
+}
+
+a:visited {
+    color: var(--gray);
+    border-bottom: 1px var(--gray);
+}
+
+a:hover {
+    color: var(--black);
+    border-bottom: 1px var(--gray);
+}
+
+ul {
+    list-style-type: disc;
+    margin: 0;
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 0 15px;
+    }
+
+    #maincontent {
+        margin-top: 40px;
+    }
+
+    h2 {
+        font-size: 28px; /* Smaller on mobile */
+    }
+}
